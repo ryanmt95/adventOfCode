@@ -1,3 +1,3 @@
-Cargo.toml
+### Advent Of Code
 
-This is called a manifest, and it contains all of the metadata that Cargo needs to compile your package.
+Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.
