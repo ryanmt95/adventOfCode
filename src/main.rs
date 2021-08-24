@@ -6,6 +6,7 @@ mod utils;
 use problems::day_one::report_repair;
 use problems::day_two::password_philosophy;
 use problems::day_three::toboggan_trajectory;
+use problems::day_four::passport_processing;
 
 fn main() {
     let args: Vec<String> = args().collect();
@@ -35,6 +36,14 @@ fn main() {
             println!("Part 1: ");
             println!("{}", result);
             let result_2 = toboggan_trajectory::part_two();
+            println!("Part 2: ");
+            println!("{}", result_2);
+        }
+        4 => {
+            let result = passport_processing::part_one();
+            println!("Part 1: ");
+            println!("{}", result);
+            let result_2 = passport_processing::part_two();
             println!("Part 2: ");
             println!("{}", result_2);
         }
