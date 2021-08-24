@@ -19,7 +19,7 @@ pub mod report_repair {
             }
         }
 
-        return (0, 0);
+        (0, 0)
     }
 
     pub fn three_sum(sum: i32) -> (i32, i32, i32) {
@@ -33,6 +33,6 @@ pub mod report_repair {
                 return (*num, num2, num3);
             }
         }
-        return (0, 0, 0);
+        (0, 0, 0)
     }
 }
