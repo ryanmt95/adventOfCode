@@ -5,6 +5,7 @@ mod utils;
 
 use problems::day_one::report_repair;
 use problems::day_two::password_philosophy;
+use problems::day_three::toboggan_trajectory;
 
 fn main() {
     let args: Vec<String> = args().collect();
@@ -26,6 +27,14 @@ fn main() {
             println!("Part 1: ");
             println!("{}", result);
             let result_2 = password_philosophy::part_two();
+            println!("Part 2: ");
+            println!("{}", result_2);
+        }
+        3 => {
+            let result = toboggan_trajectory::part_one();
+            println!("Part 1: ");
+            println!("{}", result);
+            let result_2 = toboggan_trajectory::part_two();
             println!("Part 2: ");
             println!("{}", result_2);
         }
