@@ -146,7 +146,6 @@ pub mod passport_processing {
             "pid" => {
                 let re = Regex::new(r"([0-9]){9}").unwrap();
                 if re.is_match(value) && value.len() == 9 {
-                    println!("{}", value);
                     return true
                 }
             }

@@ -7,11 +7,11 @@ use problems::day_one::report_repair;
 use problems::day_two::password_philosophy;
 use problems::day_three::toboggan_trajectory;
 use problems::day_four::passport_processing;
+use problems::day_five::binary_boarding;
 
 fn main() {
     let args: Vec<String> = args().collect();
 
-    // ::<> is the turbofish operator
     let question_day = &args[1].parse::<i32>().unwrap();
 
     match question_day {
@@ -46,6 +46,14 @@ fn main() {
             let result_2 = passport_processing::part_two();
             println!("Part 2: ");
             println!("{}", result_2);
+        }
+        5 => {
+            let result = binary_boarding::part_one();
+            println!("Part 1: ");
+            println!("{}", result);
+            let result = binary_boarding::part_two();
+            println!("Part 2: ");
+            println!("{}", result);
         }
         _ => println!("Question has no been finished yet")
     }
