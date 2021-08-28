@@ -8,6 +8,7 @@ use problems::day_two::password_philosophy;
 use problems::day_three::toboggan_trajectory;
 use problems::day_four::passport_processing;
 use problems::day_five::binary_boarding;
+use problems::day_six::custom_customs;
 
 fn main() {
     let args: Vec<String> = args().collect();
@@ -52,6 +53,14 @@ fn main() {
             println!("Part 1: ");
             println!("{}", result);
             let result = binary_boarding::part_two();
+            println!("Part 2: ");
+            println!("{}", result);
+        }
+        6 => {
+            let result = custom_customs::part_one();
+            println!("Part 1: ");
+            println!("{}", result);
+            let result = custom_customs::part_two();
             println!("Part 2: ");
             println!("{}", result);
         }
